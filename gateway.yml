@@ -18,8 +18,8 @@ spring:
         locator:
           enabled: true
           lower-case-service-id: true
-      default-filters:
-        - TokenRelay
+      #default-filters:
+      #  - TokenRelay
       routes:
         # ---- RUTA PRINCIPAL A MS-RES ----
         - id: ms-res
@@ -94,7 +94,7 @@ logging:
     root: INFO
     org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: INFO
     org.springframework.cloud.gateway: TRACE
-    
+
 ---
 spring:
   config:
