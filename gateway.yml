@@ -10,6 +10,7 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://keycloak.ucb.edu.bo:8080/realms/DemoUCB
+          jwk-set-uri: http://keycloak.ucb.edu.bo:8080/realms/DemoUCB/protocol/openid-connect/certs
 
   cloud:
     gateway:
@@ -93,7 +94,7 @@ logging:
     root: INFO
     org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: INFO
     org.springframework.cloud.gateway: TRACE
-
+    
 ---
 spring:
   config:
@@ -105,6 +106,7 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://keycloak:8080/realms/DemoUCB
+          jwk-set-uri: http://keycloak:8080/realms/DemoUCB/protocol/openid-connect/certs
 
 app:
   eureka-server: eureka
@@ -113,3 +115,4 @@ eureka:
   client:
     service-url:
       defaultZone: http://${app.eureka-server}:8761/eureka/
+
