@@ -34,8 +34,8 @@ spring:
           uri: lb://ms-res
           predicates:
             - Path=/ms-res/openapi/**
-          filters:
-            - StripPrefix=1
+          #filters:
+          #  - StripPrefix=1
 
         # ---- RUTAS EUREKA ----
         - id: eureka-web-start
