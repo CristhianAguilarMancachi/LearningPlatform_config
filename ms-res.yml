@@ -8,7 +8,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/lp_res_db
     username: postgres
-    password: gatito71
+    password: "{cipher}574b3957ffbe5a837e02143a667302dcf15b84a223a0d2b80dd278bba6b687ec"
     driver-class-name: org.postgresql.Driver
 
   jpa:
@@ -66,7 +66,7 @@ spring:
   datasource:
     url: jdbc:postgresql://postgres_res:5432/lp_res_db
     username: postgres
-    password: gatito71
+    password: "{cipher}574b3957ffbe5a837e02143a667302dcf15b84a223a0d2b80dd278bba6b687ec"
     driver-class-name: org.postgresql.Driver
 
   security:
