@@ -26,16 +26,16 @@ spring:
           uri: lb://ms-res
           predicates:
             - Path=/reviews/**
-          filters:
-            - StripPrefix=1
+          #filters:
+          #  - StripPrefix=1
 
         # ---- RUTA SWAGGER MS-RES ----
         - id: ms-res-swagger
           uri: lb://ms-res
           predicates:
             - Path=/ms-res/openapi/**
-          #filters:
-          #  - StripPrefix=1
+          filters:
+            - StripPrefix=1
 
         # ---- RUTAS EUREKA ----
         - id: eureka-web-start
